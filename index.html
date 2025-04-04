@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Tracker Web App</title>
     <link rel="stylesheet" href="style.css">
@@ -48,5 +49,356 @@
         </table>
     </div>
     <script src="script.js"></script>
+=======
+    <meta name="viewport"="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <div class="row w-100 align-items-center">
+        <div class="col-md-4 position-relative">
+          <div class="search-wrapper position-relative">
+            <input type="text" class="form-control pl-4" id="searchInput" placeholder="Search..." autocomplete="off">
+            <i class="bi bi-search position-absolute search-icon"></i>
+            <div class="search-dropdown" id="searchDropdown">
+              <div id="searchResults"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 d-flex justify-content-end gap-2">
+            <button class="btn text-dark border-0" id="loginButton" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <i class="bi bi-person-circle me-1"></i> Login
+            </button>
+            <div class="dropdown">
+                <button class="btn text-dark border-0 dropdown-toggle" type="button" id="priceListDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-currency-dollar"></i> Price List
+                </button>
+                <div class="dropdown-menu shadow-sm" aria-labelledby="priceListDropdown">
+                    <div class="px-3 py-2">
+                        <h6 class="dropdown-header">Today's Prices</h6>
+                        <div class="price-item d-flex justify-content-between align-items-center py-2">
+                            <span>Casual Women White Jacket</span>
+                            <strong>RS.1499/-</strong>
+                        </div>
+                        <div class="price-item d-flex justify-content-between align-items-center py-2">
+                            <span>Denim Blue Jacket</span>
+                            <strong>RS.999/-</strong>
+                        </div>
+                        <div class="price-item d-flex justify-content-between align-items-center py-2">
+                            <span>Fashion Jacket</span>
+                            <strong>RS.1999/-</strong>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item text-primary text-center">View All Products</a>
+                    </div>
+                </div>
+            </div>
+            <button class="btn text-dark border-0">Shipping Free</button>
+            <button class="btn text-dark border-0 position-relative" data-bs-toggle="modal" data-bs-target="#cartModal">
+                Cart <i class="bi bi-cart"></i>
+                <span class="badge bg-danger position-absolute top-0 start-100 translate-middle" id="cartCount">0</span>
+            </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <nav class="navbar navbar-light navbar-custom">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h3 class="brand-title">LAVISH<span>shopping online</span></h3>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="men.html"><i class="bi bi-gender-male"></i> Men</a></li>
+                    <li><a class="dropdown-item" href="women.html"><i class="bi bi-gender-female"></i> Women</a></li>
+                    <li><a class="dropdown-item" href="accessories.html"><i class="bi bi-bag"></i> Accessories</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-danger" href="sale.html"><i class="bi bi-tag"></i> Sale</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Lookbook</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Customer Care</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Visit Us</a></li>
+        </ul>
+    </div>
+  </nav>
+  <div class="container-fluid">
+    <div class="row g-0">
+        <div class="col-sm-6">
+            <div class="card border-0 rounded-0">
+                <div class="card-body p-0">
+                    <img src="https://img.freepik.com/free-photo/close-up-indoor-studio-fashion-portrait-gorgeous-woman-stylish-winter-brown-coat-black-hat_273443-3782.jpg?t=st=1743622758~exp=1743626358~hmac=aa0080c2ea4fa43ab28a11ce0da0459f996276829a74a8d052bae878585ddffb&w=1380" class="card-img-top" alt="Card Image">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card border-0 rounded-0">
+                <div class="card-body-3 d-flex flex-column align-items-center justify-content-center text-center">
+                    <h1 class="card-title">SLUTRY & SMART</h1>
+                    <h4>HOT SPRING LOOKS</h4>
+                    <a href="#" class="shop-link">SHOP WOMEN</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row g-0"> 
+        <div class="col-sm-1">
+            <div class="card h-50 border-0 rounded-0">
+                <div class="card-body d-flex align-items-center justify-content-center">
+                    <a href="#" class="shop-link">SHOP WOMEN</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <div class="card h-50 border-0 rounded-0">
+                <div class="card-body-4 d-flex flex-column align-items-center justify-content-center text-center">
+                    <h1 class="card-title">ELEGANT & SLICK</h1>
+                    <h4>GET READY FOR SUMMER</h4>
+                    <a href="men.html" class="shop-men">SHOP MEN</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5">
+            <div class="card h-50 border-0 rounded-0">
+                <div class="card-body p-0">
+                    <img src="https://media.istockphoto.com/id/1201024669/photo/handsome-man-in-casual-clothing.jpg?s=2048x2048&w=is&k=20&c=gWHsPcrp6v2-kG9276aaAXPIfC0MaLe38DDHxIoCcvw=" class="card-img-top" alt="Card Image">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1">
+            <div class="card h-50 border-0 rounded-0">
+                <div class="card-body d-flex align-items-center justify-content-center ">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container text-center">
+    <h2 class="mb-4 mt-4">NEW ARRIVALS</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/business-woman-posing-street.jpg" class="card-img-top-1" alt="...">
+                <div class="card-body-1">
+                    <h5 class="card-title text-center">Casual Women White Jacket</h5>
+                    <p class="card-text text-center">RS.1499/-</p>
+                    <button class="btn btn-primary btn-add-to-cart" 
+                        data-name="Casual Women White Jacket" 
+                        data-price="1499" 
+                        data-image="images/business-woman-posing-street.jpg">
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/portrait-happy-smiling-young-asian-man-using-smartphone-sitting-chair.jpg" class="card-img-top-1" alt="...">
+                <div class="card-body-1">
+                    <h5 class="card-title text-center">Denim Blue Jacket</h5>
+                    <p class="card-text text-center">RS.999/-</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card">
+                <img src="images/sexy-fashion-beauty-person-smile.jpg" class="card-img-top-1" alt="...">
+                <div class="card-body-1">
+                    <h5 class="card-title text-center">Fassion Jacket</h5>
+                    <p class="card-text text-center">RS.1999/-</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="mb-4 mt-4">GET ON THE LIST</h2>
+    <p class="custom-text">and be the first to shop new arrivals and excludive promotions</p>
+    <div class="d-flex flex-column align-items-center w-50 mx-auto">
+        <label for="email" class="form-label w-100 text-start">Enter your email here</label>
+        <div class="input-group w-100">
+            <input type="text" class="form-control" id="email" placeholder="Your Email">
+        </div>
+        <div class="d-flex w-100 mt-3 mb-3">
+            <div class="d-flex align-items-center w-50">
+                <input class="form-check-input me-2" type="checkbox" id="subscribeCheckbox">
+                <label class="form-check-label" for="subscribeCheckbox">Yes, subscribe me to your newsletter. <span>*</span></label>
+            </div>
+            <div class="w-50 text-end">
+                <button class="btn w-75 " style="background-color: rgb(118, 145, 118); color: white;">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid p-0">
+    <div class="card w-100 p-5 d-flex justify-content-center align-items-center border-0 rounded-0 bg-dark">  
+        <div class="row justify-content-center w-100 g-3">
+            <div class="col-md-3 d-flex justify-content-center position-relative">
+                <div class="card p-0 border-0 position-relative" style="height: 200px; width: 500px;"> 
+                    <img src="images/top-view-male-self-care-items.jpg" alt="img" class="w-100 h-100" style="object-fit: cover;">
+                    <div class="overlay-text position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white fw-bold">
+                        <h4>SWOON-WORTHY</h4>
+                        <h1 >ACCESSORIES</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 d-flex justify-content-center position-relative">
+                <div class="card p-0 border-0 position-relative" style="height: 200px; width: 500px;"> 
+                    <img src="images/young-funny-beautiful-fair-haired-woman-knited-hat-sweater-smiling-posing-violet-copy-space.jpg" alt="img" class="w-100 h-100" style="object-fit: cover;">
+                    <div class="overlay-text position-absolute top-0 start-0 w-100 h-100 d-flex flex-column align-items-center justify-content-center text-white fw-bold">
+                        <h4>WINTER SALE</h4>
+                        <h1>NOW 30% OFF</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid p-0 m-0 bg-light">
+    <div class="row justify-content-center g-0 text-center py-4" style="background-color: rgb(182, 177, 177);">
+      <div class="col-md-2 my-2">
+        <div class="p-2 rounded-0" style="border: none; background-color: rgb(182, 177, 177);">
+          <h2 class="mb-1" style="font-size: 20px;">LAVISH</h2>
+        </div>
+      </div>
+      <div class="col-md-2 my-2">
+        <div class="p-2 rounded-0 border-start" style="border-left: 4px solid #000; background-color: rgb(182, 177, 177);">
+          <h5 class="mb-2" style="font-size: 18px;">CUSTOMER CARE</h5>
+          <p class="mb-1" style="font-size: 12px;">Shipping Policy</p>
+          <p class="mb-1" style="font-size: 12px;">Return Policy</p>
+          <p class="mb-1" style="font-size: 12px;">Contact Us</p>
+          <p class="mb-1" style="font-size: 12px;">About Us</p>
+        </div>
+      </div>
+      <div class="col-md-2 my-2">
+        <div class="p-2 rounded-0 border-start" style="border-left: 4px solid #000; background-color: rgb(182, 177, 177);">
+          <h6 class="mb-1" style="font-size: 14px;">VISIT OUR STORE</h6>
+          <p class="mb-1" style="font-size: 12px;">500 Terry Francine Street</p>
+          <p class="mb-1" style="font-size: 12px;">San Francisco, CA94158</p>
+        </div>
+      </div>
+      <div class="col-md-2 my-2">
+        <div class="p-2 rounded-0 border-start" style="border-left: 4px solid #000; background-color: rgb(182, 177, 177);">
+          <h6 class="mb-1" style="font-size: 14px;">STAY CONNECTED</h6>
+          <p class="mb-1" style="font-size: 12px;">Supporting text.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w-100 bg-dark text-white text-center py-3 m-0">
+      &copy; 2025 Your Website. All rights reserved.
+    </div>
+  </div>
+    <div class="modal fade" id="loginModal" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm" onsubmit="return handleLogin(event)">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            <div class="invalid-feedback">Please enter a valid email</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" name="password" placeholder="Password" required>
+                            <div class="invalid-feedback">Password must be at least 6 characters</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Login</button>
+                    </form>
+                    <div id="loginError" class="alert alert-danger mt-3 d-none"></div>
+                    <div id="loginSuccess" class="alert alert-success d-none">
+                        Login successful! Redirecting...
+                    </div>
+                    <p class="text-center mt-3">
+                        Don't have an account? 
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign up</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="signupModal" data-bs-backdrop="static" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signupForm" onsubmit="return handleSignup(event)">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" name="email" placeholder="Email" required>
+                            <div class="invalid-feedback">Please enter a valid email</div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" name="password" placeholder="Password" required>
+                            <div class="invalid-feedback">Password must be at least 6 characters</div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+                    </form>
+                    <div id="signupError" class="alert alert-danger mt-3 d-none"></div>
+                    <div id="signupSuccess" class="alert alert-success d-none">
+                        Sign up successful! Please login.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="productModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Product Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img id="productImage" src="" alt="" class="img-fluid rounded product-modal-img">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 id="productName"></h3>
+                            <h4 id="productPrice" class="text-primary mb-3"></h4>
+                            <p id="productDescription" class="mb-3"></p>
+                            <p id="productCategory" class="badge bg-secondary"></p>
+                            <div class="mt-4">
+                                <button class="btn btn-primary">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="bi bi-cart"></i> Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>         
+    <script src="products.js"></script>    
+    <script src="search.js"></script>  
+    <script src="shop.js"></script>
+    <script src="login.js"></script>         
+>>>>>>> c292e13 (Initial commit)
 </body>
 </html>
